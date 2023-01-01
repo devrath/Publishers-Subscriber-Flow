@@ -3,6 +3,8 @@
 # Publishers-Subscriber-Flow
 ![kotlin](https://img.shields.io/badge/Kotlin-language-orange) ![Design-Pattern](https://img.shields.io/badge/Publisher--Subscriber-Design--Pattern-green)
 
+This repository describes how to use shared flow as a publisher and subscriber pattern
+
 <div align="center">
 
 | **`Demo`** |
