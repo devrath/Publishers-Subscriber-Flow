@@ -1,4 +1,4 @@
-package com.demo.code
+package com.demo.code.state
 
 sealed class MainScreenStates {
     //data class AddMarker(val location: LatLng) : MapStates()

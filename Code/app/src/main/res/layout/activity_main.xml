@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -20,14 +20,14 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/eventOneBtnId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/button_margin_bottom"
         android:text="@string/event_1" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/eventTwoBtnId"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/event_2" />

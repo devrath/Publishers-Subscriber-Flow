@@ -1,4 +1,4 @@
-package com.demo.code
+package com.demo.code.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -6,9 +6,12 @@ import androidx.activity.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.demo.code.state.MainScreenStates
 import com.demo.code.databinding.ActivityMainBinding
+import com.demo.code.observerLibrary.EventAction
+import com.demo.code.observerLibrary.PublisherEventBus
+import com.demo.code.vm.MainVm
 import com.google.android.material.snackbar.Snackbar
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
@@ -22,9 +25,35 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView( binding.root)
         observeUiStates()
-        //viewModel.uiLoaded()
+        observerEvents()
+        setOnClickListeners()
+        viewModel.uiLoaded()
     }
 
+    /**
+     * Observe events in the subscriber
+     */
+    private fun observerEvents() {
+        lifecycleScope.launch {
+            PublisherEventBus.subscribe<EventAction> { event ->
+                Snackbar.make(binding.root, event.eventName, Snackbar.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    /**
+     * Set on-click listeners
+     */
+    private fun setOnClickListeners() {
+        binding.apply {
+            eventOneBtnId.setOnClickListener { viewModel.triggerEventOne() }
+            eventTwoBtnId.setOnClickListener { viewModel.triggerEventTwo() }
+        }
+    }
+
+    /**
+     * Subscribe for UI-States
+     */
     private fun observeUiStates() {
         // Create a new coroutine from the lifecycleScope
         // since repeatOnLifecycle is a suspend function
@@ -47,17 +76,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    /**
-     * Screen is in loaded state
-     */
-    private fun uiLoadedState() {
-        Snackbar.make(binding.root, "UI loaded State", Snackbar.LENGTH_SHORT).show();
-    }
-
-    /**
-     * Screen is in initial state
-     */
-    private fun initialState() {
-        Snackbar.make(binding.root, "Initial State", Snackbar.LENGTH_SHORT).show();
-    }
+    private fun uiLoadedState() {}
+    private fun initialState() {}
 }
