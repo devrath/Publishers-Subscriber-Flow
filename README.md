@@ -1,6 +1,20 @@
+<img src="https://github.com/devrath/devrath/blob/master/images/kotlin_logo.png" align="right" title="Kotlin Logo" width="120">
+
 # Publishers-Subscriber-Flow
 This repository describes how to use shared flow as a publisher and subscriber pattern
 
+## **`𝙳𝚎𝚖𝚘`**
+
+<div align="center">
+
+| **`Demo`** |
+| -------------- |
+| <img src="https://github.com/devrath/Publishers-Subscriber-Flow/blob/main/Assets/output.gif" width="160" height="330"/> |
+
+</div>
+
+## **`𝙼𝚎𝚍𝚒𝚞𝚖 𝙰𝚛𝚝𝚒𝚌𝚕𝚎`** ☕
+Complete description and usage is defined in this [**`medium artice`**](https://medium.com/@devrath.dev595/publisher-subscriber-using-shared-flow-api-e12baf32113e) 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
 If you feel like support me a coffee for my efforts, I would greatly appreciate it.</br>
