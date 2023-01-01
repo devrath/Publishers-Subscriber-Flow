@@ -13,7 +13,7 @@ This repository describes how to use shared flow as a publisher and subscriber p
 
 </div>
 
-## **`𝙼𝚎𝚍𝚒𝚞𝚖 𝙰𝚛𝚝𝚒𝚌𝚕𝚎`** ☕
+## **`𝙼𝚎𝚍𝚒𝚞𝚖 𝙰𝚛𝚝𝚒𝚌𝚕𝚎`** 🌀
 Complete description and usage is defined in this [**`medium artice`**](https://medium.com/@devrath.dev595/publisher-subscriber-using-shared-flow-api-e12baf32113e) 
 
 ## **`𝚂𝚞𝚙𝚙𝚘𝚛𝚝`** ☕
