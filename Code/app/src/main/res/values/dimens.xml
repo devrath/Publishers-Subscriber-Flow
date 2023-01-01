@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="title_margin_bottom">80dp</dimen>
+    <dimen name="button_margin_bottom">30dp</dimen>
+    <dimen name="text_header_size">22sp</dimen>
+</resources>
