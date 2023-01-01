@@ -1,7 +1,7 @@
 <img src="https://github.com/devrath/devrath/blob/master/images/kotlin_logo.png" align="right" title="Kotlin Logo" width="120">
 
 # Publishers-Subscriber-Flow
-This repository describes how to use shared flow as a publisher and subscriber pattern
+![kotlin](https://img.shields.io/badge/Kotlin-language-orange) ![Design-Pattern](https://img.shields.io/badge/Publisher--Subscriber-Design--Pattern-green)
 
 <div align="center">
 
